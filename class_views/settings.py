@@ -130,3 +130,6 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+
+CSRF_TRUSTED_ORIGINS = ['http://*','https://django-railway-production-8fcf.up.railway.app']

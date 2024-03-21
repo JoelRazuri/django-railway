@@ -1,1 +1,1 @@
-web: gunicorn class_views.wsgi
+web: python manage.py collecstatic && gunicorn class_views.wsgi

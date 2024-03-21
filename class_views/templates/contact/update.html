@@ -1,0 +1,22 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block 'title' %}Editar contacto{% endblock 'title' %}
+
+{% block 'styles' %}
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock 'styles' %}
+
+{% block 'content' %}
+    {% include 'contact/partials/message_success.html' %}
+
+    <span class="aux-btns-form"><a href="{% url 'contact' %}">Volver atras</a></span>
+    <form action="{% url 'contact_update' contact.id %}" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <div class="btn-wrapper">
+            <input type="submit" value="Editar" class="btn-send">
+        </div>
+    </form>
+{% endblock 'content' %}

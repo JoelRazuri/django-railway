@@ -1,0 +1,186 @@
+/* Main settings */
+
+:root{
+    --color-primary: #2ea3f2;
+    /* --color-secondary: ; */
+    --color-text: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text);
+}
+
+/* End main settings */
+
+/* Layout settings */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--color-primary);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    color: var(--color-text);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-text);
+    width: 50%;
+    list-style-type: none;
+}
+
+.list li {
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-detail {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-detail:hover {
+    background-color: rgb(233, 229, 229);
+    color: var(--color-primary);
+    transition: .2s;
+}
+
+.btn-edit {
+    background-color: #fc0;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: rgb(233, 229, 229);
+    color: #fc0;
+    transition: .2s;
+}
+
+.btn-delete {
+    background-color: #a10e2e;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: rgb(233, 229, 229);
+    color: #a10e2e;
+    transition: .2s;
+}
+
+.search {
+    margin: 20px;
+    width: 50%;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 80%;
+}
+
+.btn-search {
+    width: 15%;
+    background-color: var(--color-primary);
+    color: white;
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: rgb(233, 229, 229);
+    color: var(--color-primary);
+    transition: .2s;
+}
+
+.aux-btns {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.aux-btns a {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.alert-success {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(21, 180, 21);
+    color: white;
+}
+
+/* End layout settings */
+
+
+/* index settings */
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.card:hover {
+    background-color: var(--color-text);
+    transition: 0.3s;
+}
+/* End index settings */
+

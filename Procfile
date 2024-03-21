@@ -1,1 +1,1 @@
-web: gunicorn class_views.wsgi
+web: gunicorn class_views/class_views.wsgi
